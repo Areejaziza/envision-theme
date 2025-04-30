@@ -1,81 +1,92 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Envision Studios</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f2e2;
-      color: #3a2a1b;
-      text-align: center;
-    }
-    .hero {
-      padding: 100px 20px;
-      background-color: #f0f2e2;
-    }
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 20px;
-      color: #6b5e53;
-    }
-    .categories {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 50px 0;
-    }
-    .category {
-      width: 300px;
-      height: 200px;
-      background-color: #e0d9ce;
-      margin: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .category:hover {
-      background-color: #d4cfc7;
-    }
-    .products {
-      margin: 50px 20px;
-    }
-    .footer {
-      margin-top: 50px;
-      padding: 30px;
-      background-color: #3a2a1b;
-      color: #f0f2e2;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Splash Screen -->
+  <div id="splash">Envision Studios</div>
 
-  <div class="hero">
-    <h1>Envision Studios</h1>
-    <p>Where Art Meets Fashion</p>
-  </div>
+  <!-- Header / Navigation Bar -->
+  <header>
+    <div class="nav-left">
+      <span class="hamburger-menu">&#9776;</span>
+    </div>
+    <div class="nav-center">
+      <img src="images/logo.png" alt="Envision Logo" class="logo">
+    </div>
+    <div class="nav-right">
+      <a href="#">SAR</a>
+      <a href="#">Cart</a>
+    </div>
+  </header>
 
-  <div class="categories">
-    <div class="category">جاهز للشراء</div>
-    <div class="category">تصميم خاص</div>
-  </div>
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Where Envision becomes Reality</h1>
+  </section>
 
-  <div class="products">
-    <h2>منتجات مختارة</h2>
-    <!-- المنتجات تضاف هنا لاحقًا -->
-  </div>
+  <!-- Categories Section -->
+  <section class="categories">
+    <button class="category">Footwear<br><span>أحذية</span></button>
+    <button class="category">Bags<br><span>حقائب</span></button>
+    <button class="category">Accessories<br><span>إكسسوارات</span></button>
+  </section>
 
-  <div class="footer">
-    <p>© 2025 Envision Studios. جميع الحقوق محفوظة.</p>
-  </div>
+  <!-- Custom Design Section -->
+  <section class="custom-design">
+    <h2>تصميم خاص</h2>
+    <p>Describe your idea and let us bring it to life.</p>
+  </section>
 
+  <!-- Before / After Interactive Image -->
+  <section class="before-after">
+    <img src="images/before-after.jpg" alt="Before and After">
+  </section>
+
+  <!-- Featured Products Carousel -->
+  <section class="products-carousel">
+    <h2>Featured Products</h2>
+    <!-- Carousel HTML here -->
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about">
+    <h2>من نحن</h2>
+    <p>We are Envision Studios. A blend of art and fashion.</p>
+    <a href="#about-details" class="read-more">Read More</a>
+  </section>
+
+  <!-- Info Links Section -->
+  <section class="info-links">
+    <a href="#materials">Materials</a>
+    <a href="#steps">Order Steps</a>
+    <a href="#care">Care Instructions</a>
+  </section>
+
+  <!-- Detailed Info Section -->
+  <section id="about-details" class="details">
+    <div id="materials">
+      <h3>الخامات</h3>
+      <p>High-quality leathers and textiles sourced with care.</p>
+    </div>
+    <div id="steps">
+      <h3>خطوات الطلب</h3>
+      <p>1. Submit idea 2. Confirm price 3. Production 4. Delivery</p>
+    </div>
+    <div id="care">
+      <h3>العناية بالقطعة</h3>
+      <p>Use soft cloth and avoid chemicals to clean your product.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact us: info@envision.com | +966 50 000 0000</p>
+    <p>© 2025 Envision Studios. All rights reserved.</p>
+  </footer>
 </body>
 </html>
